@@ -2,7 +2,7 @@
   "name": "angular-semantic-versioning",
   "version": "0.0.0",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@MickDarkstar"
+    "@MickDarkstar:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "ng": "ng",
