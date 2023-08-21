@@ -5,7 +5,7 @@
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist/angular-semantic-versioning/"
+        "pkgRoot": "./dist"
       }
     ],
     "@semantic-release/release-notes-generator",
@@ -23,7 +23,7 @@
           "package.json",
           "README.md",
           "CHANGELOG.md",
-          "dist/**/*"
+          "dist/**"
         ],
         "message": "chore: Release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
