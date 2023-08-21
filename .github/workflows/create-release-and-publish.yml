@@ -21,8 +21,8 @@ jobs:
         - run: npx semantic-release
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        - name: Publish NPM package
-          run: npm publish
+        - run: npm run build
+        - run: npm publish
           env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 # https://github.com/semantic-release/npm to fix package.json version not updating
