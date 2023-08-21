@@ -25,6 +25,7 @@ jobs:
           run: npm publish
           env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+# https://github.com/semantic-release/npm to fix package.json version not updating
 
   ## works!!
   # build:
