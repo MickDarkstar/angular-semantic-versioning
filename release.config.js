@@ -6,7 +6,7 @@ const config = {
     [
       "@semantic-release/git", // git configs, takes assets, stages commit and pushes to repo. 
       {
-        assets: ["dist/*", "dist/*.js.map"],
+        assets: ["package.json, dist/*", "dist/*.js.map"],
         message: // edit commit message/release note and skipping CI to prevent an endless loop
           "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
       },
