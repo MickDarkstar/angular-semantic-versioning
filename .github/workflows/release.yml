@@ -33,7 +33,7 @@ jobs:
         run: ls
 
       - name: Run semantic release and publish package
-        run: cd dist && npm run semantic-release
+        run: cd dist && npx semantic-release
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
