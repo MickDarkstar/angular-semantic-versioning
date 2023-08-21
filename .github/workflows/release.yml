@@ -29,7 +29,7 @@ jobs:
       - name: Copy json file to dist dir
         run: cp package.json ./dist
       - name: Run semantic release and publish package
+        run: cd ./dist/angular-semantic-release && npx semantic-release
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: cd ./dist/angular-semantic-release npm run semantic-release
